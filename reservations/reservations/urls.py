@@ -21,3 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('catalogue/', include('catalogue.urls')),
 ]
+
+admin.site.index_title = "Projet Réservations"
+admin.site.index_header = "Projet Réservations HEADER"
+admin.site.site_title = "Spectacles"
