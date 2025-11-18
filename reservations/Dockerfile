@@ -22,6 +22,8 @@ COPY requirements.txt /reservations/
 # Install Python dependencies
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
+RUN pip install django-extensions
+
 # Copy the rest of the code
 COPY . /reservations/
 
