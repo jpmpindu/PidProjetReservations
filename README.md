@@ -1,34 +1,34 @@
-# 📘 Reservations Project – Full Documentation
+# 📘 Projet Reservations – Documentation Complète
 
-## 🐳 1. Installing Docker
-Before running this project, you must install Docker on your system. Below are the installation steps for **Windows**, **Linux**, and **macOS**.
-
----
-
-## 🪟 1.1 Install Docker on Windows
-### Requirements:
-- Windows 10/11 Pro, Enterprise, or Education
-- Hyper‑V enabled
-
-### Steps:
-1. Download Docker Desktop for Windows from the official website.
-2. Install it and follow the instructions.
-3. Restart your computer.
-4. Launch Docker Desktop.
-
-### Start Docker on Windows:
-Docker Desktop starts automatically. If not:
-```
-Start Menu → Docker Desktop
-```
-Wait until it says **Docker is running**.
+## 🐳 1. Installation de Docker
+Avant de lancer ce projet, vous devez installer Docker sur votre système. Voici les étapes pour **Windows**, **Linux** et **macOS**.
 
 ---
 
-## 🐧 1.2 Install Docker on Linux
-Docker installation depends on your distribution. Example for Ubuntu:
+## 🪟 1.1 Installer Docker sur Windows
+### Prérequis :
+- Windows 10/11 Pro, Enterprise ou Education
+- Hyper‑V activé
 
-### Steps:
+### Étapes :
+1. Téléchargez Docker Desktop pour Windows depuis le site officiel.
+2. Installez-le et suivez les instructions.
+3. Redémarrez votre ordinateur.
+4. Lancez Docker Desktop.
+
+### Démarrer Docker sur Windows :
+Docker Desktop se lance automatiquement. Sinon :
+```
+Menu Démarrer → Docker Desktop
+```
+Attendez que le message **Docker is running** apparaisse.
+
+---
+
+## 🐧 1.2 Installer Docker sur Linux
+L’installation dépend de votre distribution. Exemple pour Ubuntu :
+
+### Étapes :
 ```bash
 sudo apt update
 sudo apt install ca-certificates curl gnupg
@@ -40,7 +40,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
-### Start Docker on Linux:
+### Démarrer Docker sur Linux :
 ```bash
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -48,35 +48,35 @@ sudo systemctl enable docker
 
 ---
 
-## 🍎 1.3 Install Docker on macOS
-### Steps:
-1. Download Docker Desktop for macOS from the official website.
-2. Drag Docker.app to **Applications**.
-3. Launch Docker.
-4. Grant necessary security permissions.
+## 🍎 1.3 Installer Docker sur macOS
+### Étapes :
+1. Téléchargez Docker Desktop pour macOS depuis le site officiel.
+2. Glissez Docker.app dans **Applications**.
+3. Lancez Docker.
+4. Autorisez les permissions nécessaires.
 
-### Start Docker on macOS:
-Docker starts automatically. If not:
+### Démarrer Docker sur macOS :
+Docker se lance automatiquement. Sinon :
 ```
 Applications → Docker
 ```
-Wait for **Docker is running**.
+Attendez le message **Docker is running**.
 
 ---
 
-# 🧬 2. Clone the Project
-Run the following command:
+# 🧬 2. Cloner le Projet
+Exécutez la commande suivante :
 ```bash
 git clone https://github.com/jpmpindu/PidProjetReservations.git
 cd PidProjetReservations
 cd reservations
 ```
 
-You will now see this file structure.
+Vous verrez maintenant cette structure de fichiers.
 
 ---
 
-# 🗂️ 3. Project Architecture
+# 🗂️ 3. Architecture du Projet
 ```
 reservations/
 │
@@ -122,103 +122,101 @@ reservations/
 
 ---
 
-# 📝 4. File and Folder Explanations
+# 📝 4. Explication des Fichiers et Dossiers
 
-## Root Files
+## Fichiers à la racine
 ### **.gitignore**
-Defines which files Git should ignore.
+Définit les fichiers à ignorer par Git.
 
 ### **README.md**
-Documentation for the project.
+Documentation du projet.
 
 ### **docker-compose.yml**
-Defines services (Django, MySQL, etc.) and how they run together.
+Définit les services (Django, MySQL, etc.) et leur configuration.
 
 ### **Dockerfile**
-Builds the Django application image.
+Construit l’image Docker de l’application Django.
 
 ### **manage.py**
-Django command-line tool used to run the server, migrations, etc.
+Outil en ligne de commande de Django pour lancer le serveur, effectuer les migrations, etc.
 
 ### **.env.example**
-Template containing required environment variables. Duplicate it:
+Template contenant les variables d’environnement nécessaires. Dupliquez-le :
 ```bash
 cp .env.example .env
 ```
 
 ---
 
-## The "accounts" App
-Handles user management.
+## L’App "accounts"
+Gère la gestion des utilisateurs.
 
-### Files:
-- **__init__.py** → Marks folder as a Python package
-- **admin.py** → Admin configuration
-- **apps.py** → Django app configuration
-- **models.py** → Database models
-- **tests.py** → Unit tests
-- **urls.py** → URL routing for this app
-- **views.py** → Logic that returns responses
+### Fichiers :
+- **__init__.py** → Initialise le package Python
+- **admin.py** → Configuration de l’admin
+- **apps.py** → Configuration de l’app Django
+- **models.py** → Modèles de base de données
+- **tests.py** → Tests unitaires
+- **urls.py** → Routes de l’app
+- **views.py** → Logique pour les réponses HTTP
 
-### Folders:
-- **forms/** → Django forms (Signup, Login…)
-- **migrations/** → Auto-generated migration files
-- **templates/** → HTML templates
-
----
-
-## The "catalogue" App
-Handles products, menus, and catalog data.
-
-### Files:
-Same structure as `accounts`, plus:
-- **fixtures/** → Initial test data
-- **models/** → Splitted model files
-- **views/** → Structured views folder
+### Dossiers :
+- **forms/** → Formulaires Django (inscription, connexion…)
+- **migrations/** → Fichiers de migration automatiques
+- **templates/** → Templates HTML
 
 ---
 
-## The "reservations" Folder (Main Django Project)
-Contains core Django configuration.
+## L’App "catalogue"
+Gère les produits, menus et données du catalogue.
 
-### Files:
-- **__init__.py** → Package initializer
-- **asgi.py** → ASGI server configuration
-- **settings.py** → Global settings (DB, apps, middleware, templates…)
-- **urls.py** → Main project routing
-- **wsgi.py** → WSGI server configuration
+### Fichiers :
+Même structure que `accounts`, plus :
+- **fixtures/** → Données initiales pour tests
+- **models/** → Modèles séparés
+- **views/** → Vue structurée en sous-dossiers
 
 ---
 
-# 🐳 5. Run the Project with Docker
+## Dossier "reservations" (Projet Django principal)
+Contient la configuration principale de Django.
 
-## Step 1: Build and start containers
+### Fichiers :
+- **__init__.py** → Initialise le package
+- **asgi.py** → Configuration du serveur ASGI
+- **settings.py** → Paramètres globaux (DB, apps, middleware…)
+- **urls.py** → Routes principales du projet
+- **wsgi.py** → Configuration du serveur WSGI
+
+---
+
+# 🐳 5. Lancer le Projet avec Docker
+
+## Étape 1 : Construire et lancer les conteneurs
 ```bash
 docker compose up --build
 ```
 
-## Step 2: Apply database migrations
+## Étape 2 : Appliquer les migrations
 ```bash
 docker compose exec web python manage.py migrate
 ```
 
-## Step 3: Create a superuser
+## Étape 3 : Créer un superutilisateur
 ```bash
 docker compose exec web python manage.py createsuperuser
 ```
 
 ---
 
-# 🌍 6. Access the Project in Your Browser
-Once Docker is running, open:
+# 🌍 6. Accéder au Projet dans le Navigateur
+Une fois Docker lancé, ouvrez :
 ```
 http://localhost:8000
 ```
-Admin panel:
+Panneau d’administration :
 ```
 http://localhost:8000/admin
 ```
 
-If everything is correct, the Django homepage should appear.
-
----
+Si tout est correct, la page d’accueil Django s’affichera.
