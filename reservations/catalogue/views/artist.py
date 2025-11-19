@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.http import Http404
 from django.contrib import messages
+from django.conf import settings
 
 from catalogue.models import Artist
 from catalogue.forms import ArtistForm
@@ -8,7 +9,7 @@ from catalogue.forms import ArtistForm
 def index(request):
     artists = Artist.objects.all()
     title = 'Liste des artistes'
-    
+
     return render(request, 'artist/index.html', {
         'artists':artists,
         'title':title
@@ -19,22 +20,25 @@ def show(request, artist_id):
         artist = Artist.objects.get(id=artist_id)
     except Artist.DoesNotExist:
         raise Http404('Artist inexistant');
-        
+
     title = 'Fiche d\'un artiste'
-    
+
     return render(request, 'artist/show.html', {
         'artist':artist,
-        'title':title 
+        'title':title
     })
 
 def create(request):
+    if not request.user.is_authenticated or not request.user.has_perm('add_artist'):
+        return redirect(f"{settings.LOGIN_URL}?next={request.path}")
+
     form = ArtistForm(request.POST or None)
-    
+
     if request.method == 'POST':
         if form.is_valid():
             form.save()
             messages.add_message(request, messages.SUCCESS, "Nouvel artiste créé avec succès.")
-            
+
             return redirect('catalogue:artist-index')
         else:
             messages.add_message(request, messages.ERROR, "Échec de l'ajout d'un nouvel artiste !")
@@ -51,7 +55,7 @@ def edit(request, artist_id):
 
     # pass the object as instance in form
     form = ArtistForm(request.POST or None, instance = artist)
-    
+
     if request.method == 'POST':
         method = request.POST.get('_method', '').upper()
 
@@ -88,4 +92,3 @@ def delete(request, artist_id):
     return render(request, 'artist/show.html', {
             'artist' : artist,
 })
-
