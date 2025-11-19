@@ -1,4 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import logout
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 from django.contrib.auth.mixins import UserPassesTestMixin
@@ -49,3 +50,25 @@ def profile(request):
     return render(request, 'user/profile.html', {
         "user_language" : languages[request.user.usermeta.langue],
     })
+
+@login_required
+def delete(request, pk):
+    if request.method == 'POST':
+        method = request.POST.get('_method', '').upper()
+
+        if method == 'DELETE':
+            if request.user and request.user.id==pk:
+                user = User.objects.get(id=request.user.id)
+                user.delete()
+
+                messages.success(request, "Utilisateur supprimé avec succès.")
+                logout(request)
+            else:
+                messages.error(request,
+				"Suppression d'un autre compte interdite!")
+
+            return redirect('home')
+
+    messages.error(request, "Suppression interdite (méthode incorrecte)!")
+
+    return redirect('home')

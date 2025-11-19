@@ -1,5 +1,5 @@
-from django.contrib.auth.models import User
 from django.db import models
+from django.contrib.auth.models import User
 
 class UserMeta(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -7,6 +7,6 @@ class UserMeta(models.Model):
 
     def __str__(self):
         return self.user.first_name +" "+ self.user.last_name
-    
+
     class Meta:
         db_table = "user_meta"
