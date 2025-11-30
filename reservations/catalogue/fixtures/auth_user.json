@@ -3,16 +3,16 @@
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$1000000$PJHPXQkd6JZuzXrXWmsElE$zar+pVWj4xFscvumtqiQPpEsJTavdByzGG8LzwajKDQ=",
-        "last_login": "2025-11-17T22:41:08Z",
+        "password": "pbkdf2_sha256$1000000$JNTzgIyuVi7pEBHpukBHLR$KYeNn/yZxWpSWSM3Bb36rfFxCI+XbPEivnulEBvlK8I=",
+        "last_login": "2025-11-30T21:18:58.159Z",
         "is_superuser": true,
         "username": "jpmpindu",
-        "first_name": "Jean-Paul",
-        "last_name": "MPINDU MUKANDILA",
+        "first_name": "",
+        "last_name": "",
         "email": "jpmpindu@gmail.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2025-11-02T21:07:42Z",
+        "date_joined": "2025-11-30T19:54:29.613Z",
         "groups": [],
         "user_permissions": []
     }
@@ -21,16 +21,16 @@
     "model": "auth.user",
     "pk": 2,
     "fields": {
-        "password": "pbkdf2_sha256$1000000$9V5P157nM1G9agX1wCONNV$g32ST3M79zhC++Sd5ZCvGqluRmZOgs8sMKQqDG7Rgx0=",
+        "password": "pbkdf2_sha256$1000000$0ZATmBSFpUGuLy05n18rzz$lWgUh/7zaO6oPRUonJa6/l1+Apcm3GTApk0+LC0zLbo=",
         "last_login": null,
         "is_superuser": false,
         "username": "anna",
-        "first_name": "Anna",
-        "last_name": "Lyse",
-        "email": "ana.lyse@sull.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
         "is_staff": false,
         "is_active": true,
-        "date_joined": "2025-11-05T20:53:19Z",
+        "date_joined": "2025-11-30T21:24:53Z",
         "groups": [
             2
         ],
@@ -41,8 +41,8 @@
     "model": "auth.user",
     "pk": 3,
     "fields": {
-        "password": "pbkdf2_sha256$1000000$WF568OGPeJrbMKjsSOWIcL$ty4LewFN/9Ovf1b1Krxx2tihbiAUTiLGwRcs/5AOVcM=",
-        "last_login": "2025-11-17T22:47:34Z",
+        "password": "pbkdf2_sha256$1000000$C8VN5CjxRe2nJwyPoQASQv$CVLD7dJOXDrIC6jOnCxR+q1erbpGjYZffsXRuzipylc=",
+        "last_login": "2025-11-30T21:30:35Z",
         "is_superuser": true,
         "username": "bob",
         "first_name": "Bob",
@@ -50,7 +50,7 @@
         "email": "bob@sull.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2025-11-17T22:47:55Z",
+        "date_joined": "2025-11-30T21:29:58Z",
         "groups": [
             1
         ],
