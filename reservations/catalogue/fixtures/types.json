@@ -2,9 +2,9 @@
   {
     "model": "catalogue.type",
     "pk": 1,
-      "fields":{
-        "type": "auteur"
-      }
+    "fields": {
+      "type": "auteur"
+    }
   },
   {
     "model": "catalogue.type",
