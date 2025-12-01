@@ -6,7 +6,7 @@
       "slug": "art-center",
       "designation": "Art Center",
       "address": "",
-      "locality": 1,
+      "locality": ["1000", "Bruxelles"],
       "website": null,
       "phone": null
     }
