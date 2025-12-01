@@ -1,0 +1,86 @@
+[
+{
+  "model": "catalogue.location",
+  "pk": 1,
+  "fields": {
+    "slug": "art-center",
+    "designation": "Art Center",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 2,
+  "fields": {
+    "slug": "atrium",
+    "designation": "Atrium",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 3,
+  "fields": {
+    "slug": "opera-house",
+    "designation": "Opera House",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 4,
+  "fields": {
+    "slug": "espace-delvaux-la-venerie",
+    "designation": "",
+    "address": "",
+    "locality": null,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 5,
+  "fields": {
+    "slug": "dexia-art-center",
+    "designation": "",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 6,
+  "fields": {
+    "slug": "la-samaritaine",
+    "designation": "",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+},
+{
+  "model": "catalogue.location",
+  "pk": 7,
+  "fields": {
+    "slug": "espace-magh",
+    "designation": "",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
+  }
+}
+]
