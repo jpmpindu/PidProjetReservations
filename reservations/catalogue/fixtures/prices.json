@@ -1,0 +1,42 @@
+[
+  {
+    "model": "catalogue.price",
+    "pk": 1,
+    "fields":{
+      "type": "children",
+      "price": 12.9,
+      "start_date": "2025-12-01",
+      "end_date": "2025-05-31"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 2,
+    "fields": {
+      "type": "senior",
+      "price": 20.02,
+      "start_date": "2025-12-01",
+      "end_date": "2025-05-31"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 3,
+    "fields": {
+      "type": "article 27",
+      "price": 21,
+      "start_date": "2025-12-01",
+      "end_date": "2025-05-31"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 4,
+    "fields": {
+      "type": "VIP",
+      "price": 30.50,
+      "start_date": "2025-12-01",
+      "end_date": "2025-05-31"
+    }
+  }
+]

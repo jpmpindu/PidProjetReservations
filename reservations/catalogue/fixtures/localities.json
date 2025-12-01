@@ -1,0 +1,26 @@
+[
+  {
+    "model": "catalogue.locality",
+    "pk": 1,
+    "fields":{
+      "postal_code": "1020",
+      "locality":"Laeken"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 2,
+    "fields": {
+      "postal_code": "1180",
+      "locality":"Uccle"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 3,
+    "fields": {
+      "postal_code": "1200",
+      "locality":"Woluwe-Saint-Lambert"
+    }
+  }
+]
