@@ -1,0 +1,68 @@
+[
+{
+  "model": "catalogue.reservation",
+  "pk": 1,
+  "fields": {
+    "booking_date": "2025-12-01T22:27:31.263Z",
+    "status": "en attente",
+    "user": [
+      "bob"
+    ]
+  }
+},
+{
+  "model": "catalogue.reservation",
+  "pk": 2,
+  "fields": {
+    "booking_date": "2025-12-01T22:28:06.894Z",
+    "status": "annulée",
+    "user": [
+      "bob"
+    ]
+  }
+},
+{
+  "model": "catalogue.reservation",
+  "pk": 3,
+  "fields": {
+    "booking_date": "2025-12-01T22:28:24.417Z",
+    "status": "payée",
+    "user": [
+      "bob"
+    ]
+  }
+},
+{
+  "model": "catalogue.reservation",
+  "pk": 4,
+  "fields": {
+    "booking_date": "2025-12-01T22:28:52.907Z",
+    "status": "payée",
+    "user": [
+      "bob"
+    ]
+  }
+},
+{
+  "model": "catalogue.reservation",
+  "pk": 5,
+  "fields": {
+    "booking_date": "2025-12-01T22:45:22.794Z",
+    "status": "payée",
+    "user": [
+      "bob"
+    ]
+  }
+},
+{
+  "model": "catalogue.reservation",
+  "pk": 6,
+  "fields": {
+    "booking_date": "2025-12-01T22:45:40.071Z",
+    "status": "en attente",
+    "user": [
+      "anna"
+    ]
+  }
+}
+]
