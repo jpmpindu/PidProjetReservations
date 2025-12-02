@@ -1,26 +1,26 @@
 [
-{
-    "model": "catalogue.usermeta",
-    "pk": 1,
-    "fields": {
-        "user": 2,
-        "langue": "en"
-    }
-},
-{
-    "model": "catalogue.usermeta",
-    "pk": 2,
-    "fields": {
-        "user": 1,
-        "langue": "en"
-    }
-},
-{
-    "model": "catalogue.usermeta",
-    "pk": 3,
-    "fields": {
-        "user": 3,
-        "langue": "fr"
-    }
-}
+  {
+      "model": "catalogue.usermeta",
+      "pk": 1,
+      "fields": {
+          "user": 2,
+          "langue": "en"
+      }
+  },
+  {
+      "model": "catalogue.usermeta",
+      "pk": 2,
+      "fields": {
+          "user": 1,
+          "langue": "fr"
+      }
+  }
+  {
+      "model": "catalogue.usermeta",
+      "pk": 3,
+      "fields": {
+          "user": 3,
+          "langue": "fr"
+      }
+  }
 ]

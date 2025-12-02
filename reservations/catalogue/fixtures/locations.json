@@ -18,7 +18,7 @@
       "slug": "atrium",
       "designation": "Atrium",
       "address": "",
-      "locality": 1,
+      "locality": ["1000", "Bruxelles"],
       "website": null,
       "phone": null
     }
@@ -30,7 +30,7 @@
       "slug": "opera-house",
       "designation": "Opera House",
       "address": "",
-      "locality": 2,
+      "locality": ["1040", "Etterbeek"],
       "website": null,
       "phone": null
     }
@@ -42,7 +42,7 @@
       "slug": "espace-delvaux-la-venerie",
       "designation": "Espace Delvaux / La Vénerie",
       "address": "3 rue Gratès",
-      "locality": 4,
+      "locality": ["1170", "Watermael-Boistfort"],
       "website": "https://www.lavenerie.be",
       "phone": "+32 (0)2/663.85.50"
     }
@@ -54,7 +54,7 @@
       "slug": "dexia-art-center",
       "designation": "Dexia Art Center",
       "address": "50 rue de l'Ecuyer",
-      "locality": 1,
+      "locality": ["1000", "Bruxelles"],
       "website": null,
       "phone": null
     }
@@ -66,7 +66,7 @@
       "slug": "la-samaritaine",
       "designation": "La Samaritaine",
       "address": "16 rue de la samaritaine",
-      "locality": 1,
+      "locality": ["1000", "Bruxelles"],
       "website": "http://www.lasamaritaine.be/",
       "phone": null
     }
@@ -78,7 +78,7 @@
       "slug": "espace-magh",
       "designation": "Espace Magh",
       "address": "17 rue du Poinçon",
-      "locality": 1,
+      "locality": ["1000", "Bruxelles"],
       "website": "http://www.espacemagh.be",
       "phone": "+32 (0)2/274.05.10"
     }

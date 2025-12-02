@@ -6,10 +6,7 @@
     "slug": "art-center",
     "designation": "Art Center",
     "address": "",
-    "locality": [
-      "1000",
-      "Bruxelles"
-    ],
+    "locality": 1,
     "website": null,
     "phone": null
   }
@@ -21,10 +18,7 @@
     "slug": "atrium",
     "designation": "Atrium",
     "address": "",
-    "locality": [
-      "1000",
-      "Bruxelles"
-    ],
+    "locality": 1,
     "website": null,
     "phone": null
   }
@@ -36,10 +30,7 @@
     "slug": "opera-house",
     "designation": "Opera House",
     "address": "",
-    "locality": [
-      "1040",
-      "Etterbeek"
-    ],
+    "locality": 1,
     "website": null,
     "phone": null
   }
@@ -49,14 +40,11 @@
   "pk": 4,
   "fields": {
     "slug": "espace-delvaux-la-venerie",
-    "designation": "Espace Delvaux / La Vénerie",
-    "address": "3 rue Gratès",
-    "locality": [
-      "1170",
-      "Watermael-Boistfort"
-    ],
-    "website": "https://www.lavenerie.be",
-    "phone": "+32 (0)2/663.85.50"
+    "designation": "",
+    "address": "",
+    "locality": null,
+    "website": null,
+    "phone": null
   }
 },
 {
@@ -64,12 +52,9 @@
   "pk": 5,
   "fields": {
     "slug": "dexia-art-center",
-    "designation": "Dexia Art Center",
-    "address": "50 rue de l'Ecuyer",
-    "locality": [
-      "1000",
-      "Bruxelles"
-    ],
+    "designation": "",
+    "address": "",
+    "locality": 1,
     "website": null,
     "phone": null
   }
@@ -79,13 +64,10 @@
   "pk": 6,
   "fields": {
     "slug": "la-samaritaine",
-    "designation": "La Samaritaine",
-    "address": "16 rue de la samaritaine",
-    "locality": [
-      "1000",
-      "Bruxelles"
-    ],
-    "website": "http://www.lasamaritaine.be/",
+    "designation": "",
+    "address": "",
+    "locality": 1,
+    "website": null,
     "phone": null
   }
 },
@@ -94,14 +76,11 @@
   "pk": 7,
   "fields": {
     "slug": "espace-magh",
-    "designation": "Espace Magh",
-    "address": "17 rue du Poinçon",
-    "locality": [
-      "1000",
-      "Bruxelles"
-    ],
-    "website": "http://www.espacemagh.be",
-    "phone": "+32 (0)2/274.05.10"
+    "designation": "",
+    "address": "",
+    "locality": 1,
+    "website": null,
+    "phone": null
   }
 }
 ]
