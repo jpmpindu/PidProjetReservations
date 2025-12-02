@@ -2,6 +2,11 @@ from django.db import models
 from .location import *
 import datetime
 
+class ShowManager(models.Manager):
+    def get_by_natural_key(self, slug, created_in):
+        return self.get(slug=slug, created_in=created_in)
+
+
 class Show(models.Model):
     slug = models.CharField(max_length=60, unique=True)
     title = models.CharField(max_length=255)
@@ -19,3 +24,12 @@ class Show(models.Model):
 
     class Meta:
         db_table = "shows"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["slug", "created_in"],
+                name="unique_slug_created_in",
+            ),
+        ]
+
+    def natural_key(self):
+        return (self.slug, self.created_in)
