@@ -4,3 +4,4 @@ from . import locality
 from . import price
 from . import location
 from . import show_
+from . import representation
