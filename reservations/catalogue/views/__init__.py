@@ -3,3 +3,4 @@ from . import type
 from . import locality
 from . import price
 from . import location
+from . import show_
