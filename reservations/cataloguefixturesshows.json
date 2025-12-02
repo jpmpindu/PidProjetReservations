@@ -1,0 +1,78 @@
+[
+{
+  "model": "catalogue.show",
+  "pk": 1,
+  "fields": {
+    "slug": "ayiti",
+    "title": "Ayiti",
+    "description": null,
+    "poster_url": null,
+    "duration": null,
+    "created_in": 2010,
+    "location": [
+      "espace-delvaux-la-venerie",
+      "https://www.lavenerie.be"
+    ],
+    "bookable": true,
+    "created_at": "2025-12-02T20:17:23.755Z",
+    "updated_at": null
+  }
+},
+{
+  "model": "catalogue.show",
+  "pk": 2,
+  "fields": {
+    "slug": "cible-mouvante",
+    "title": "Cible mouvante",
+    "description": null,
+    "poster_url": null,
+    "duration": null,
+    "created_in": 2012,
+    "location": [
+      "espace-delvaux-la-venerie",
+      "https://www.lavenerie.be"
+    ],
+    "bookable": true,
+    "created_at": "2025-12-02T20:18:20.913Z",
+    "updated_at": null
+  }
+},
+{
+  "model": "catalogue.show",
+  "pk": 3,
+  "fields": {
+    "slug": "ceci-nest-pas-un-chanteur-belge",
+    "title": "Ceci n'est pas un chanteur belge",
+    "description": null,
+    "poster_url": null,
+    "duration": null,
+    "created_in": 2014,
+    "location": [
+      "espace-delvaux-la-venerie",
+      "https://www.lavenerie.be"
+    ],
+    "bookable": true,
+    "created_at": "2025-12-02T20:19:11.264Z",
+    "updated_at": null
+  }
+},
+{
+  "model": "catalogue.show",
+  "pk": 4,
+  "fields": {
+    "slug": "manneke",
+    "title": "Manneke... !",
+    "description": null,
+    "poster_url": null,
+    "duration": null,
+    "created_in": 2011,
+    "location": [
+      "espace-delvaux-la-venerie",
+      "https://www.lavenerie.be"
+    ],
+    "bookable": true,
+    "created_at": "2025-12-02T20:20:02.808Z",
+    "updated_at": null
+  }
+}
+]
