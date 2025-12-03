@@ -218,5 +218,10 @@ Panneau d’administration :
 ```
 http://localhost:8000/admin
 ```
+Pour pouvoir la DB avec les table via phpMyAdmin:
+```
+http://localhost:8080/
+```
+Il faut juste configurer dans le fichier docker-composer.yml le phpMyAdmin "Le user et le password"
 
 Si tout est correct, la page d’accueil Django s’affichera.
