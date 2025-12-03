@@ -4,10 +4,18 @@
 
 {% block content %}
     <h2>{{ artist.firstname }} {{ artist.lastname }}</h2>
-    
+
+    <h2>Liste des types</h2>
+    <ul>
+      {% for type in artist.types.all %}
+          <li>{{ type.type }}</li>
+      {% endfor %}
+    </ul>
+
+
     <div><a href="{% url 'catalogue:artist-edit' artist.id %}">Modifier</a></div>
 
-    <form method="post" action="{% url 'catalogue:artist-delete' artist.id %}" 
+    <form method="post" action="{% url 'catalogue:artist-delete' artist.id %}"
         onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ?')">
         {% csrf_token %}
 
@@ -18,4 +26,3 @@
 
     <nav><a href="{% url 'catalogue:artist-index' %}">Retour à l'index</a></nav>
 {% endblock %}
-
