@@ -9,7 +9,7 @@
 
     {% if show.poster_url %}
     {% load static %}
-    <p><img src="{% static 'catalogue/images' %}{{ show.poster_url }}" alt="{{ show.title }}" width="200"></p>
+    <p><img src="{% static 'catalogue/images/' %}{{ show.poster_url }}" alt="{{ show.title }}" width="200"></p>
     {% else %}
     <canvas width="200" height="100" style="border:1px solid #000000;"></canvas>
     {% endif %}
